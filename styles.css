@@ -190,3 +190,88 @@ section {
     z-index: 3;
     left: 60px;
 }
+
+/* FLEXBOX - Container */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    /* horizontal */
+    flex-wrap: wrap;
+    /* permite que los elementos se ajusten */
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background: #e6f7ff;
+    padding: 10px;
+    gap: 10px;
+    height: 120px;
+    border: 2px dashed #3399ff;
+}
+
+.flex-container .item {
+    background: #66ccff;
+    padding: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* FLEXBOX - Items */
+.flex-container-items {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background: #fff3e6;
+    padding: 10px;
+    border: 2px dashed #ff9933;
+    height: 120px;
+    align-items: flex-start;
+}
+
+.flex-container-items .item {
+    background: #ffb366;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.order-1 {
+    order: 1;
+}
+
+.order-2 {
+    order: 2;
+}
+
+.order-3 {
+    order: 3;
+}
+
+.grow {
+    flex-grow: 2;
+}
+
+.self-end {
+    align-self: flex-end;
+}
+
+/* FLEXBOX - Responsive */
+.flex-responsive {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    background: #f0f8ff;
+    padding: 10px;
+    border: 2px dashed #99ccff;
+}
+
+.responsive-box {
+    background: #6699cc;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    flex: 1 1 150px;
+    /* flex-grow, flex-shrink, flex-basis */
+    min-width: 100px;
+    text-align: center;
+}
