@@ -1,21 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Modelo de Caja */
+.box,
+.box-inline,
+.block-a-inline {
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px;
+}
+
 .box {
-    margin: 20px;
-    padding: 15px;
-    border: 2px solid blue;
+    border-color: blue;
     background-color: lightblue;
     display: block;
 }
 
 .box-inline {
-    margin: 10px;
-    padding: 10px;
-    border: 2px dashed green;
+    border-color: green;
     background-color: lightgreen;
     display: inline;
 }
 
 .block-a-inline {
     display: inline;
-    border: 1px solid red;
+    border-color: red;
+    background-color: lightcoral;
+}
+
+/* Position */
+.position-container {
+    position: relative;
+    height: 200px;
+    border: 1px dashed gray;
+    margin-bottom: 20px;
+}
+
+.pos-static {
+    position: static;
+    background: lightgray;
+}
+
+.pos-relative {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    background: lightpink;
+}
+
+.pos-absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: lightyellow;
+}
+
+.pos-fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: lightcyan;
+}
+
+/* Float y Clear */
+.float-left {
+    float: left;
+    width: 45%;
+    background: #d9f0ff;
+    padding: 10px;
+}
+
+.float-right {
+    float: right;
+    width: 45%;
+    background: #fdd9ff;
+    padding: 10px;
+}
+
+.clear-both {
+    clear: both;
+    background: #f0f0f0;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Display */
+.display-block {
+    display: block;
+    background: #ffe4b5;
     padding: 5px;
+}
+
+.display-inline {
+    display: inline;
+    background: #98fb98;
+    padding: 5px;
+}
+
+.display-inline-block {
+    display: inline-block;
+    background: #add8e6;
+    padding: 5px;
+}
+
+.display-none {
+    display: none;
+}
+
+/* Overflow */
+.overflow {
+    width: 200px;
+    height: 60px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 5px;
+    overflow-wrap: break-word;
+}
+
+.overflow::after {
+    content: "Este es un contenido largo que posiblemente cause desbordamiento.";
+}
+
+.overflow.visible {
+    overflow: visible;
+}
+
+.overflow.hidden {
+    overflow: hidden;
+}
+
+.overflow.scroll {
+    overflow: scroll;
+}
+
+.overflow.auto {
+    overflow: auto;
+}
+
+/* Visibility */
+.visibility-visible {
+    visibility: visible;
+    background: #e0ffe0;
+    padding: 5px;
+}
+
+.visibility-hidden {
+    visibility: hidden;
+    background: #ffe0e0;
+    padding: 5px;
+}
+
+/* Z-Index */
+.z-container {
+    position: relative;
+    height: 150px;
+}
+
+.z-box {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0.8;
+}
+
+.z1 {
+    background: red;
+    z-index: 1;
+    left: 20px;
+}
+
+.z2 {
+    background: green;
+    z-index: 2;
+    left: 40px;
+}
+
+.z3 {
+    background: blue;
+    z-index: 3;
+    left: 60px;
 }

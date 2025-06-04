@@ -3,17 +3,78 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Modelo de Caja</title>
+    <title>Modelo de Caja y Posicionamiento CSS</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>Modelo de Caja</h1>
 
-    <div class="box">Este es un div (bloque)</div>
-    <span class="box-inline">Este es un span (en línea)</span>
+    <h1>Modelo de Caja y Posicionamiento en CSS3</h1>
 
-    <p class="block-a-inline">Este párrafo ahora se comporta como en línea</p>
+    <!-- Sección: Modelo de Box -->
+    <section>
+        <h2>Modelo de Box</h2>
+        <div class="box">Este es un div (bloque)</div>
+        <span class="box-inline">Este es un span (en línea)</span>
+        <p class="block-a-inline">Este párrafo se comporta como en línea</p>
+    </section>
+
+    <!-- Sección: position -->
+    <section>
+        <h2>Propiedad: position</h2>
+        <div class="position-container">
+            <div class="pos-static">Static</div>
+            <div class="pos-relative">Relative</div>
+            <div class="pos-absolute">Absolute</div>
+            <div class="pos-fixed">Fixed</div>
+        </div>
+    </section>
+
+    <!-- Sección: float y clear -->
+    <section>
+        <h2>Propiedades: float y clear</h2>
+        <div class="float-container">
+            <div class="float-left">Flotado izquierda</div>
+            <div class="float-right">Flotado derecha</div>
+            <div class="clear-both">Contenido con clear</div>
+        </div>
+    </section>
+
+    <!-- Sección: display -->
+    <section>
+        <h2>Propiedad: display</h2>
+        <div class="display-block">Display: block</div>
+        <span class="display-inline">Display: inline</span>
+        <div class="display-inline-block">Display: inline-block</div>
+        <div class="display-none">Este elemento no debería verse (display: none)</div>
+    </section>
+
+    <!-- Sección: overflow -->
+    <section>
+        <h2>Propiedad: overflow</h2>
+        <div class="overflow visible">Overflow: visible</div>
+        <div class="overflow hidden">Overflow: hidden</div>
+        <div class="overflow scroll">Overflow: scroll</div>
+        <div class="overflow auto">Overflow: auto</div>
+    </section>
+
+    <!-- Sección: visibility -->
+    <section>
+        <h2>Propiedad: visibility</h2>
+        <div class="visibility-visible">Visible</div>
+        <div class="visibility-hidden">Oculto (visibility: hidden)</div>
+    </section>
+
+    <!-- Sección: z-index -->
+    <section>
+        <h2>Propiedad: z-index</h2>
+        <div class="z-container">
+            <div class="z-box z1">z-index: 1</div>
+            <div class="z-box z3">z-index: 3</div>
+            <div class="z-box z2">z-index: 2</div>
+        </div>
+    </section>
+
 </body>
 
 </html>
